@@ -121,6 +121,7 @@ return{aliases:["styl"],cI:!1,i:"("+l.join("|")+")",k:"if else for in",c:[e.QSM,
   body.innerHTML = body.innerHTML
     // for japanese headline
     .replace(/<a href=\"#\">(\s)*<\/a>/gi, '[]')
+    .replace(/<a href=\"#\">\/<\/a>/gi, '[\/]')
     // action
     .replace(/\[\](.+)\s@action/gi, '<gtd class="gtd-action"><span class="fa fa-square-o"></span> $1</gtd>')
     // later
