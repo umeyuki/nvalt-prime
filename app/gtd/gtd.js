@@ -5,6 +5,8 @@
 
   // handle checkboxes for tasks
   body.innerHTML = body.innerHTML
+    // for japanese headline
+    .replace(/<a href=\"#\">(\s)*<\/a>/gi, '[]')
     // action
     .replace(/\[\](.+)\s@action/gi, '<gtd class="gtd-action"><span class="fa fa-square-o"></span> $1</gtd>')
     // later
